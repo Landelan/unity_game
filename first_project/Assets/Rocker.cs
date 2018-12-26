@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Rocker : MonoBehaviour
 {
-
+    [SerializeField] float rcsTrust = 10f;
+    [SerializeField] float mainTrust = 50f;
     Rigidbody rigidbody;
     AudioSource audioSource;
 
@@ -24,8 +25,16 @@ public class Rocker : MonoBehaviour
 
     private void ProcessInput()
     {
-        if (Input.GetKey(KeyCode.Space)) { 
-            rigidbody.AddRelativeForce(Vector3.up);
+
+        RunRocket(mainTrust);
+        RotationRocker(rcsTrust);
+    }
+
+    private void RunRocket(float mainTrust)
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            rigidbody.AddRelativeForce(Vector3.up * mainTrust);
             if (!audioSource.isPlaying)
             {
                 audioSource.Play();
@@ -35,7 +44,14 @@ public class Rocker : MonoBehaviour
         {
             audioSource.Stop();
         }
-        if (Input.GetKey(KeyCode.A)) { transform.Rotate(Vector3.forward); }
-        if (Input.GetKey(KeyCode.D)) { transform.Rotate(-Vector3.forward); }
+    }
+
+    private void RotationRocker(float rcsTrust)
+    {
+        float rotateSpeed = rcsTrust * Time.deltaTime;
+        rigidbody.freezeRotation = true;
+        if (Input.GetKey(KeyCode.A)) { transform.Rotate(Vector3.forward * rotateSpeed); }
+        if (Input.GetKey(KeyCode.D)) { transform.Rotate(-Vector3.forward * rotateSpeed); }
+        rigidbody.freezeRotation = false;
     }
 }
