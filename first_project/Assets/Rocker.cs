@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Rocker : MonoBehaviour
 {
@@ -21,6 +22,25 @@ public class Rocker : MonoBehaviour
     void Update()
     {
         ProcessInput();
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Platform")
+        {
+            Debug.Log("Finish!");
+            SceneManager.LoadScene(1);
+        }
+        else if (collision.gameObject.tag == "Obstacles")
+        {
+            Debug.Log("Dead!");
+            SceneManager.LoadScene(0);
+        }
+        else if (collision.gameObject.tag == "Earth")
+        {
+            Debug.Log("Earth Dead!");
+            SceneManager.LoadScene(0);
+        }
     }
 
     private void ProcessInput()
