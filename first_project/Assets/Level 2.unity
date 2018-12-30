@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.43931714, g: 0.4876287, b: 0.56787354, a: 1}
+  m_IndirectSpecularColor: {r: 0.44972974, g: 0.4997943, b: 0.5756312, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -88,7 +88,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: db2a247c74d064fa2bab0604dcd9b736,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -916,40 +917,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Directional Light
       objectReference: {fileID: 0}
+    - target: {fileID: 8389905363397369326, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.3
+      value: 9.5
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 56.6
+      value: 53.6
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.1
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5594566
+      value: 0.7499074
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.51465327
+      value: -0.2873648
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.28946188
+      value: 0.5556925
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5816805
+      value: 0.21509619
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
@@ -959,17 +965,17 @@ PrefabInstance:
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 71.58501
+      value: 39.939003
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -119.535
+      value: -247.786
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -49.193
+      value: -165.503
       objectReference: {fileID: 0}
     - target: {fileID: 8389905363397369327, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
         type: 3}
@@ -985,11 +991,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.45485032
-      objectReference: {fileID: 0}
-    - target: {fileID: 8389905363397369326, guid: dc94ff0c0a3a446e39fa3d1e5f54e844,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc94ff0c0a3a446e39fa3d1e5f54e844, type: 3}
