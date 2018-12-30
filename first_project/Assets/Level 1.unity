@@ -317,7 +317,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 94b44eaeb28a24cf1b1cce26b7825e3c, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -332,7 +332,7 @@ AudioSource:
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 0
+  BypassListenerEffects: 1
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -433,6 +433,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rcsTrust: 30
   mainTrust: 10
+  mainAudioEngine: {fileID: 8300000, guid: 94b44eaeb28a24cf1b1cce26b7825e3c, type: 3}
+  crashAudioEngine: {fileID: 8300000, guid: 333feb853cf10474381125414cfbbabb, type: 3}
+  successAudioEngine: {fileID: 8300000, guid: 4628e33f731f94c9899566aae6237510, type: 3}
 --- !u!65 &1025909385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -596,6 +599,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566333716242089828, guid: 2e661c6ad75814d2d81182fc95690e48,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e661c6ad75814d2d81182fc95690e48, type: 3}

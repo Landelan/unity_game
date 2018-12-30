@@ -524,6 +524,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rcsTrust: 30
   mainTrust: 10
+  mainAudioEngine: {fileID: 8300000, guid: 94b44eaeb28a24cf1b1cce26b7825e3c, type: 3}
+  crashAudioEngine: {fileID: 8300000, guid: 333feb853cf10474381125414cfbbabb, type: 3}
+  successAudioEngine: {fileID: 8300000, guid: 4628e33f731f94c9899566aae6237510, type: 3}
 --- !u!65 &1025909385
 BoxCollider:
   m_ObjectHideFlags: 0

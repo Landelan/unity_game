@@ -8,6 +8,10 @@ public class Rocker : MonoBehaviour
 {
     [SerializeField] float rcsTrust = 10f;
     [SerializeField] float mainTrust = 50f;
+    [SerializeField] AudioClip mainAudioEngine;
+    [SerializeField] AudioClip crashAudioEngine;
+    [SerializeField] AudioClip successAudioEngine;
+
     Rigidbody rigidbody;
     AudioSource audioSource;
 
@@ -43,20 +47,28 @@ public class Rocker : MonoBehaviour
         {
             Debug.Log("Finish!");
             state = State.Transcending;
+            audioSource.Stop();
+            audioSource.PlayOneShot(successAudioEngine);
             Invoke("LoadNextScene", 1f);
         }
         else if (collision.gameObject.tag == "Obstacles")
         {
             Debug.Log("Dead!");
-            state = State.Dying;
-            Invoke("LoadFirstScene", 1f);
+            DeadActions();
         }
         else if (collision.gameObject.tag == "Earth")
         {
             Debug.Log("Earth Dead!");
-            state = State.Dying;
-            Invoke("LoadFirstScene", 1f);
+            DeadActions();
         }
+    }
+
+    private void DeadActions()
+    {
+        state = State.Dying;
+        audioSource.Stop();
+        audioSource.PlayOneShot(crashAudioEngine);
+        Invoke("LoadFirstScene", 1f);
     }
 
     private void LoadFirstScene()
@@ -80,15 +92,20 @@ public class Rocker : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            rigidbody.AddRelativeForce(Vector3.up * mainTrust);
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-            }
+            UpSound(mainTrust);
         }
         else
         {
             audioSource.Stop();
+        }
+    }
+
+    private void UpSound(float mainTrust)
+    {
+        rigidbody.AddRelativeForce(Vector3.up * mainTrust);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(mainAudioEngine);
         }
     }
 
