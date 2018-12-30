@@ -11,6 +11,9 @@ public class Rocker : MonoBehaviour
     Rigidbody rigidbody;
     AudioSource audioSource;
 
+    enum State { Alive, Dying, Transcending }
+    State state = State.Alive;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,26 +24,49 @@ public class Rocker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ProcessInput();
+        Debug.Log(state);
+        if (state == State.Alive)
+        {
+            ProcessInput();
+        }
+
     }
 
     void OnCollisionEnter(Collision collision)
     {
+        if (state != State.Alive)
+        {
+            return;
+        }
+
         if (collision.gameObject.tag == "Platform")
         {
             Debug.Log("Finish!");
-            SceneManager.LoadScene(1);
+            state = State.Transcending;
+            Invoke("LoadNextScene", 1f);
         }
         else if (collision.gameObject.tag == "Obstacles")
         {
             Debug.Log("Dead!");
-            SceneManager.LoadScene(0);
+            state = State.Dying;
+            Invoke("LoadFirstScene", 1f);
         }
         else if (collision.gameObject.tag == "Earth")
         {
             Debug.Log("Earth Dead!");
-            SceneManager.LoadScene(0);
+            state = State.Dying;
+            Invoke("LoadFirstScene", 1f);
         }
+    }
+
+    private void LoadFirstScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    private void LoadNextScene()
+    {
+        SceneManager.LoadScene(1);
     }
 
     private void ProcessInput()
