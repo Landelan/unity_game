@@ -8,9 +8,15 @@ public class Rocker : MonoBehaviour
 {
     [SerializeField] float rcsTrust = 10f;
     [SerializeField] float mainTrust = 50f;
+
     [SerializeField] AudioClip mainAudioEngine;
     [SerializeField] AudioClip crashAudioEngine;
     [SerializeField] AudioClip successAudioEngine;
+
+    [SerializeField] ParticleSystem rocketParticleSystem;
+    [SerializeField] ParticleSystem rightengineParticleSystem;
+    [SerializeField] ParticleSystem leftengineParticleSystem;
+    [SerializeField] ParticleSystem winplatformParticleSystem;
 
     Rigidbody rigidbody;
     AudioSource audioSource;
@@ -49,6 +55,9 @@ public class Rocker : MonoBehaviour
             state = State.Transcending;
             audioSource.Stop();
             audioSource.PlayOneShot(successAudioEngine);
+            rightengineParticleSystem.Stop();
+            leftengineParticleSystem.Stop();
+            winplatformParticleSystem.Play();
             Invoke("LoadNextScene", 1f);
         }
         else if (collision.gameObject.tag == "Obstacles")
@@ -67,6 +76,9 @@ public class Rocker : MonoBehaviour
     {
         state = State.Dying;
         audioSource.Stop();
+        rightengineParticleSystem.Stop();
+        leftengineParticleSystem.Stop();
+        rocketParticleSystem.Play();
         audioSource.PlayOneShot(crashAudioEngine);
         Invoke("LoadFirstScene", 1f);
     }
@@ -96,6 +108,8 @@ public class Rocker : MonoBehaviour
         }
         else
         {
+            rightengineParticleSystem.Stop();
+            leftengineParticleSystem.Stop();
             audioSource.Stop();
         }
     }
@@ -107,6 +121,8 @@ public class Rocker : MonoBehaviour
         {
             audioSource.PlayOneShot(mainAudioEngine);
         }
+        rightengineParticleSystem.Play();
+        leftengineParticleSystem.Play();
     }
 
     private void RotationRocker(float rcsTrust)
