@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Rocker : MonoBehaviour
 {
+
     [SerializeField] float rcsTrust = 10f;
     [SerializeField] float mainTrust = 50f;
 

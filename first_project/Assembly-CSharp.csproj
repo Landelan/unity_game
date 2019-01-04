@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Obstacles.cs" />
     <Compile Include="Assets\Rocker.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/kskrypnyk/Dropbox/Projects/Unity/first_project/first_project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

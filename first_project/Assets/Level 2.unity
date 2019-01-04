@@ -680,6 +680,7 @@ GameObject:
   - component: {fileID: 1898661845}
   - component: {fileID: 1898661844}
   - component: {fileID: 1898661843}
+  - component: {fileID: 1898661846}
   m_Layer: 0
   m_Name: UpObs
   m_TagString: Obstacles
@@ -695,7 +696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898661841}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.86, y: 13.56, z: 0}
+  m_LocalPosition: {x: -2.86, y: 14, z: 0}
   m_LocalScale: {x: 1.4383999, y: 13.399879, z: 5.75561}
   m_Children: []
   m_Father: {fileID: 1623962188}
@@ -759,6 +760,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898661841}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1898661846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898661841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9308b2ed105f4eb69c8b6c48defa0b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 0, y: 5, z: 0}
+  movementRagne: 0
 --- !u!1001 &3889531012737826389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -863,12 +878,12 @@ PrefabInstance:
     - target: {fileID: 7566333716242089850, guid: 2e661c6ad75814d2d81182fc95690e48,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.37
+      value: 11.99
       objectReference: {fileID: 0}
     - target: {fileID: 7566333716242089850, guid: 2e661c6ad75814d2d81182fc95690e48,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -27.37
+      value: -30.84
       objectReference: {fileID: 0}
     - target: {fileID: 7566333716242089850, guid: 2e661c6ad75814d2d81182fc95690e48,
         type: 3}
