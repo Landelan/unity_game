@@ -408,7 +408,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 94b44eaeb28a24cf1b1cce26b7825e3c, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -423,7 +423,7 @@ AudioSource:
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 0
+  BypassListenerEffects: 1
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -527,12 +527,10 @@ MonoBehaviour:
   mainAudioEngine: {fileID: 8300000, guid: 94b44eaeb28a24cf1b1cce26b7825e3c, type: 3}
   crashAudioEngine: {fileID: 8300000, guid: 333feb853cf10474381125414cfbbabb, type: 3}
   successAudioEngine: {fileID: 8300000, guid: 4628e33f731f94c9899566aae6237510, type: 3}
-  rocketParticleSystem: {fileID: 198204746014789312, guid: ab79a37535b979f48b6de56e3a0a5cb0,
-    type: 3}
-  engineParticleSystem: {fileID: 198100719057022332, guid: a3553fd250eb92d4091bebde350c6739,
-    type: 3}
-  winplatformParticleSystem: {fileID: 198631066050499358, guid: 62198a3a5dbb64a4f9e1618929224faa,
-    type: 3}
+  rocketParticleSystem: {fileID: 8678907918210297295}
+  rightengineParticleSystem: {fileID: 8678907918210297294}
+  leftengineParticleSystem: {fileID: 8678907918210297293}
+  winplatformParticleSystem: {fileID: 8678907918210297292}
 --- !u!65 &1025909385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1077,3 +1075,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dd27ce581c6c4bfeacf550846ab4e16, type: 3}
+--- !u!198 &8678907918210297292 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4067318816202465319, guid: 9dd27ce581c6c4bfeacf550846ab4e16,
+    type: 3}
+  m_PrefabInstance: {fileID: 8678907918210297291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8678907918210297293 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7063142465040060629, guid: 9dd27ce581c6c4bfeacf550846ab4e16,
+    type: 3}
+  m_PrefabInstance: {fileID: 8678907918210297291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8678907918210297294 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8898528913714367019, guid: 9dd27ce581c6c4bfeacf550846ab4e16,
+    type: 3}
+  m_PrefabInstance: {fileID: 8678907918210297291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8678907918210297295 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1937530624139265294, guid: 9dd27ce581c6c4bfeacf550846ab4e16,
+    type: 3}
+  m_PrefabInstance: {fileID: 8678907918210297291}
+  m_PrefabAsset: {fileID: 0}
