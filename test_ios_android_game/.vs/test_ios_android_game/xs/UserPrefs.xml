@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{D7DE510D-A602-0E35-C10B-E902E14B9E18}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Player_script.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Rotation.cs">
     <Files>
       <File FileName="Assets/Player_script.cs" Line="8" Column="5" />
+      <File FileName="Assets/Rotation.cs" Line="8" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
