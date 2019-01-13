@@ -60,9 +60,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\epyphany\demo\ressources\move.cs" />
-    <Compile Include="Assets\epyphany\demo\ressources\rotate.cs" />
-    <None Include="Assets\epyphany\ReadMe.txt" />
+    <Compile Include="Assets\Controller.cs" />
+    <None Include="Assets\StarSparrow\ReadMe.txt" />
+    <None Include="Assets\StarSparrow\Materials\Unified\UnifiedMaterials.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/kskrypnyk/Dropbox/Projects/Unity/first_project/flyRush/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
