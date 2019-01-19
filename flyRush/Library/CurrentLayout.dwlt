@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1680
     height: 870
-  m_MinSize: {x: 681, y: 498}
+  m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 62
+  controlID: 53
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1189
     height: 870
-  m_MinSize: {x: 404, y: 498}
+  m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 63
+  controlID: 54
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,10 +161,10 @@ MonoBehaviour:
     y: 0
     width: 1189
     height: 527
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 64
+  controlID: 14
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,8 +184,8 @@ MonoBehaviour:
     y: 0
     width: 352
     height: 527
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -265,8 +265,8 @@ MonoBehaviour:
     y: 0
     width: 491
     height: 870
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -391,9 +391,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -7.973833, y: 11.351215, z: -3.4219685}
+    m_Target: {x: 163.1151, y: 140.58185, z: 101.95041}
     speed: 2
-    m_Value: {x: -7.973833, y: 11.351215, z: -3.4219685}
+    m_Value: {x: 163.1151, y: 140.58185, z: 101.95041}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -421,19 +421,19 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.049929805, y: -0.5591504, z: 0.033763118, w: -0.8268724}
+    m_Target: {x: -0.44525906, y: -0.2023173, z: 0.10402003, w: -0.86602074}
     speed: 2
-    m_Value: {x: -0.049929805, y: -0.5591504, z: 0.033763118, w: -0.8268724}
+    m_Value: {x: -0.44525906, y: -0.2023173, z: 0.10402003, w: -0.86602074}
   m_Size:
-    m_Target: 236.32246
+    m_Target: 613.29474
     speed: 2
-    m_Value: 236.32246
+    m_Value: 613.29474
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.0235635, y: -0.62857383, z: 0.01905775, w: -0.7771593}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -468,20 +468,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 66ad0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 364dffff364fffff6a4fffffd2fbffff
+      m_ExpandedIDs: 2c85feff3685feff3885feff1092feffbc92feff18a2feff78a6feff88a6feff48a7feff7491ffff0892ffffd892ffff6c93ffff3a94ffffc294ffffe895ffff1297ffff6898fffff29affffa29cffff209fffff12b1fffffeb2ffffdeeeffff8aefffff12f3fffff0f3ffff18f4ffffbef4ffffd0f4ffff72f5fffff0f6ffff40f7ffffe2f7ffff50f8ffffd2fbfffff4fffffffe320000c8f10000f618010014190100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Main Camera
-        m_OriginalName: Main Camera
+        m_Name: Waypoint 008
+        m_OriginalName: Waypoint 008
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 20926
+        m_UserData: 71936
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -612,20 +612,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/StarSparrow/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/StarSparrow/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/kskrypnyk/Dropbox/Projects/Unity/first_project/flyRush
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a440000
-    m_LastClickedID: 17418
-    m_ExpandedIDs: 00000000a62700008c290000c82a00002e2c0000ec43000000ca9a3b
+    m_SelectedIDs: ea270000
+    m_LastClickedID: 10218
+    m_ExpandedIDs: 00000000ea27000088280000302e0000f62f0000f82f000066ad000072ae000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -653,7 +653,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a6270000c82a0000
+    m_ExpandedIDs: 00000000ea27000088280000302e0000f62f0000f82f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -707,7 +707,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-  m_DirectoriesAreaWidth: 115
+  m_DirectoriesAreaWidth: 347
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
