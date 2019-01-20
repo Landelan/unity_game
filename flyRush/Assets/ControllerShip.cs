@@ -10,12 +10,12 @@ public class ControllerShip : MonoBehaviour
     public GameObject Camera;
     public Transform target;
 
-    [Tooltip("in m/s")][SerializeField] float Speed = 30f;
+    [Tooltip("in m/s")] [SerializeField] float Speed = 30f;
     [Tooltip("in m")] [SerializeField] float xRange = 10f;
     [Tooltip("in m")] [SerializeField] float yRange = 8f;
 
     // Start is called before the first frame update
-    void Start() 
+    void Start()
     {
 
     }
@@ -54,10 +54,18 @@ public class ControllerShip : MonoBehaviour
             Rocket.transform.rotation = Quaternion.RotateTowards(transform.rotation, target.rotation, 0.5f);
         }
 
-
-    
-
-
-
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Map")
+        {
+            Debug.Log("Dead!");
+        }
+        else
+        {
+            Debug.Log("loo");
+        }
+    }
+
 }
