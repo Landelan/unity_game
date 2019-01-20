@@ -35,12 +35,19 @@ public class ControllerShip : MonoBehaviour
         float yPossition = transform.localPosition.y + yOffset;
         float yLimits = Mathf.Clamp(yPossition, -yRange, yRange);
 
+        transform.localPosition = new Vector3(xLimits, yLimits, transform.localPosition.z);
 
-        float rotationLimits = Mathf.Clamp(horizontalThrow, -1, 1);
+
+        float xrotationLimits = Mathf.Clamp(horizontalThrow, -1, 1);
+        float yrotationLimits = Mathf.Clamp(verticalThrow, -1, 1);
 
         if (horizontalThrow != 0)
         {
-            transform.Rotate(0f, 0f, rotationLimits);
+            transform.Rotate(0f, 0f, xrotationLimits);
+        }
+        else if (verticalThrow != 0)
+        {
+            transform.Rotate(-yrotationLimits * 2, 0f, 0f);
         }
         else
         {
@@ -48,6 +55,9 @@ public class ControllerShip : MonoBehaviour
         }
 
 
-        transform.localPosition = new Vector3(xLimits, yLimits, transform.localPosition.z);
+    
+
+
+
     }
 }
