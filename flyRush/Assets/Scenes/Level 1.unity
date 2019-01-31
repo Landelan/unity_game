@@ -5421,6 +5421,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7241008382552408292, guid: 206dc24d514cdd146a07be8e731a56e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4038966172950479363, guid: 206dc24d514cdd146a07be8e731a56e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 206dc24d514cdd146a07be8e731a56e9, type: 3}
 --- !u!1001 &1088805011

@@ -23,6 +23,8 @@ public class ControllerShip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         float horizontalThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         float verticalThrow = CrossPlatformInputManager.GetAxis("Vertical");
         float xOffset = horizontalThrow * Speed * Time.deltaTime;

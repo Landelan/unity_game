@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - Map
+  - Gun
   layers:
   - Default
   - TransparentFX
