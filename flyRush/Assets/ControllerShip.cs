@@ -58,16 +58,10 @@ public class ControllerShip : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Map")
-        {
-            Debug.Log("Dead!");
-        }
-        else
-        {
-            Debug.Log("loo");
-        }
+
+        Debug.Log("loo");
     }
 
 }
